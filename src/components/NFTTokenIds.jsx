@@ -110,7 +110,7 @@ export default function ListNft() {
         if (isAuthenticated && !isWeb3Enabled && !isWeb3EnableLoading)
           enableWeb3({ provider: connectorId });
           getAsset()
-          // console.log("yep");
+          console.log("yep");
       }, [isAuthenticated, isWeb3Enabled]);
   
 
