@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px rgb(187, 186, 186) ridge;
+    margin: O auto 10px auto;
+    padding-bottom: 10px;
+    
+}
+
+.items {
+    margin: 0px 7% 0px 7%;
+    color: black;
+    font-size: medium;
+}
+
+.center {
+    display: table-column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.click{
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+.infos {
+    margin: 10px 0px 10px 0px;
+}

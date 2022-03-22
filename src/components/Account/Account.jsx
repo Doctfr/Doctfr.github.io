@@ -49,6 +49,7 @@ function Account() {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [isAuthModalVisible, setIsAuthModalVisible] = useState(false);
 
+
   if (!isAuthenticated || !account) {
     return (
       <>
@@ -102,6 +103,7 @@ function Account() {
       </>
     );
   }
+
 
   return (
     <>

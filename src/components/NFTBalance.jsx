@@ -6,6 +6,7 @@ import {
   SendOutlined,
   ShoppingCartOutlined,
 } from "@ant-design/icons";
+
 import { getExplorer } from "helpers/networks";
 import AddressInput from "./AddressInput";
 import { useVerifyMetadata } from "hooks/useVerifyMetadata";
@@ -52,6 +53,7 @@ function NFTBalance() {
 
     try {
       const tx = await Moralis.transfer(options);
+      
       console.log(tx);
       setIsPending(false);
     } catch (e) {
@@ -69,7 +71,7 @@ function NFTBalance() {
     setAmount(e.target.value);
   };
 
-  console.log("NFTBalances", NFTBalances);
+  // console.log("NFTBalances", NFTBalances);
   return (
     <div style={{ padding: "15px", maxWidth: "1030px", width: "100%" }}>
       <h1>🖼 NFT Balances</h1>
